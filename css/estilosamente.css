@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.top{
+    text-align: center;
+    font-family: 'nunito sans';
+}
+.corpo {
+    width: 100vw;
+    height: 100vh;
+    background: #DC9713;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'nunito sans';
+    }
+.content {
+    width: 100vh;
+    height: 70vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.progress{
+        height: 15px;
+        width: 70%;
+        background-color: #777;
+        position: relative;
+}
+.progress .progress-bar{
+       position: absolute;
+       height: 100%;
+       background-color: #add555;
+       animation: progress-animation 60s infinite;
+}
+@keyframes progress-animation{
+        0% { width: 0%; }
+        
+        100% { width: 100%}
+}
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.text{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+.countdown-el{
+    text-align: center;
+}
